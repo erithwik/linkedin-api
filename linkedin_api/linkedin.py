@@ -168,7 +168,7 @@ class Linkedin(object):
         if keywords:
             params["keywords"] = keywords
 
-        data = self.search(params, limit=limit)
+        data = self.search(params, limit=limit, results=[])
 
         results = []
         for item in data:
@@ -198,7 +198,7 @@ class Linkedin(object):
         if keywords:
             params["keywords"] = keywords
 
-        data = self.search(params, limit=limit)
+        data = self.search(params, limit=limit, results=[])
 
         results = []
         for item in data:
